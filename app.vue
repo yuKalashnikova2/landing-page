@@ -1,16 +1,34 @@
 
  <template>
   <div class="flex">
-    <Header />
+    <div class="container">
+      <Header />
     <div class="content-wrapper">
       <NuxtPage />
+    </div>
     </div>
   </div>
 </template>
 
 <style lang="scss">
-.content-wrapper {
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/kenarose');
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #22202E;
+}
+.container {
   margin: 0 auto;
-  background: pink;
+  max-width: 1440px;
+  background: rgb(197, 230, 234);
 }
 </style>
