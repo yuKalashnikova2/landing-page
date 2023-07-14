@@ -26,12 +26,15 @@ a {
   color: #22202e;
 }
 
+img {
+  max-width: 100%;
+}
+
 ul li {
   list-style-type: none;
 }
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  background: rgb(197, 230, 234);
 }
 </style>
