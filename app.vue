@@ -20,6 +20,7 @@
 body {
   font-family: 'Satoshi', sans-serif;
   min-height: 100vh;
+  color: #2a254b;
 }
 
 a {
