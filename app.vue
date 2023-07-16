@@ -14,6 +14,7 @@
 @import url('https://fonts.cdnfonts.com/css/kenarose');
 * {
   box-sizing: border-box;
+  font-weight: 400;
 }
 
 body {
