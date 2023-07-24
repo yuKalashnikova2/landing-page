@@ -1,0 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/kenarose');
+
+:root {
+    --black: #2a254b;
+    --black-second: #22202e;
+    --gray: #726e8d;
+}
+* {
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Satoshi', sans-serif;
+  min-height: 100vh;
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-second);
+}
+
+img {
+  max-width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}

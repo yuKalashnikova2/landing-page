@@ -46,14 +46,14 @@ const aboutBrandItems = ref([
   padding: 80px 80px 130px 80px;
   &__title {
     text-align: center;
-    color: #2a254b;
+    color: var(--black);
     font-size: 24px;
     margin: 0 0 36px 0;
   }
   &-items {
     display: flex;
     justify-content: space-around;
-    color:#2a254b;
+    color:var(--black);
     & > *:not(:last-child) {
       margin-right: 18px;
     }

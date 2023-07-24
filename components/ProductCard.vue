@@ -33,6 +33,7 @@ const props = defineProps({
   }
   &-title {
     display: block;
+    color: var(--black);
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 8px;
@@ -41,6 +42,7 @@ const props = defineProps({
   &-price {
     display: block;
     font-size: 18px;
+    color: var(--black);
   }
 }
 </style>

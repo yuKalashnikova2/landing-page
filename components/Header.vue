@@ -67,6 +67,7 @@ const menu = [
   }
   &-logo {
     font-family: 'Kenarose', sans-serif;
+    color: var(--black-second);
     font-size: 24px;
     text-decoration: none;
     text-align: center;
@@ -84,7 +85,7 @@ const menu = [
     }
 
     &__link {
-      color: #726e8d;
+      color: var(--gray);
       &:hover {
         text-decoration: underline;
       }
