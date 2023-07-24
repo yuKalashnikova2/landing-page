@@ -18,7 +18,7 @@ const products = ref([
       />
     </div>
     <div class="products-link">
-      <NuxtLink to="#" class="products-link-btn">View collection</NuxtLink>
+      <ButtonUI type="link" colorBtn="light" to="#">View collection</ButtonUI>
     </div>
   </div>
 </template>
@@ -33,14 +33,7 @@ const products = ref([
     display: flex;
     justify-content: center;
     align-items: center;
-    &-btn {
-      display: block;
-      text-align: center;
-      background: #f9f9f9;
-      padding: 16px 32px;
-      margin: 40px;
-      width: 170px;
-    }
+    margin: 40px;
   }
 }
 </style>
