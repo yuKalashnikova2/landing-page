@@ -20,6 +20,10 @@ const props = defineProps({
     type: String,
     default: '#5B5676',
   },
+  colorBtn: {
+    type: String,
+    default: '#2a254b',
+  },
   background: {
     type: String,
     default: '#fff',
@@ -39,7 +43,10 @@ const props = defineProps({
       >
     </div>
     <div class="hero-info__link">
-      <NuxtLink :to="link" class="hero-info__link-btn"
+      <NuxtLink
+        :to="link"
+        class="hero-info__link-btn"
+        :style="{ color: colorBtn }"
         >View collection</NuxtLink
       >
     </div>
@@ -52,7 +59,7 @@ const props = defineProps({
     background-color: #fff;
     max-width: 630px;
     padding: 48px 55px;
-    height: 444px;
+    min-height: 444px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,12 +70,14 @@ const props = defineProps({
       margin: 0 0 20px 0;
     }
     &__link {
-      background: #f9f9f9;
+      background: rgba(249, 249, 249, 0.15);
       width: 170px;
       display: flex;
       justify-content: center;
+      &:hover {
+        background: rgba(249, 249, 249, 0.4);
+      }
       &-btn {
-        color: #2a254b;
         padding: 16px 32px;
       }
     }

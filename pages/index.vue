@@ -3,4 +3,5 @@
     <HeroBlock />
     <AboutBrand />
     <Products />
+    <Features />
 </template>
