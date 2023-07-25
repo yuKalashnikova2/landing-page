@@ -21,15 +21,7 @@
           <span>Free events</span>
         </div>
       </div>
-
-      <form class="subscribe-form">
-        <input
-          type="text"
-          placeholder="your@email.com"
-          class="input-text subscribe-form__input"
-        />
-        <ButtonUI color-btn="primary">Sign up</ButtonUI>
-      </form>
+        <FormSubscribe /> 
     </div>
   </div>
 </template>
@@ -69,9 +61,6 @@
     display: flex;
     margin-top: 40px;
     width: 100%;
-    &__input {
-      flex-grow: 1;
-    }
   }
 }
 </style>

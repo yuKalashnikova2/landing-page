@@ -34,8 +34,16 @@
             <NuxtLink to="/" class="footer-menu__link">Returns policy</NuxtLink>
           </div>
         </div>
+
+        <div class="footer-subscribe">
+          <span>Join our mailing list</span>
+          <FormSubscribe
+            different-color="light"
+            bg-color-input="rgba(255,255,255,0.15)"
+            bgColorInputText="#fff"
+          />
+        </div>
       </div>
-      <div class="footer-subscribe"></div>
     </div>
   </footer>
 </template>
@@ -51,10 +59,12 @@
     display: grid;
     grid-template-columns: 540px 1fr;
     column-gap: 110px;
+    border-bottom: 1px solid var(--violet);
   }
   &-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 48px;
     &__title {
       display: block;
       margin-bottom: 12px;
