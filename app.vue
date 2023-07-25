@@ -5,6 +5,7 @@
       <div class="content-wrapper">
         <NuxtPage />
       </div>
+      <Footer />
     </div>
   </div>
 </template>
