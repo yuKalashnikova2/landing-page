@@ -4,4 +4,5 @@
     <AboutBrand />
     <Products />
     <Features />
+    <Subscribe />
 </template>
