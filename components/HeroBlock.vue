@@ -4,7 +4,7 @@
   <div class="hero">
     <HeroInformation
       title="Luxury homeware for people who love timeless design quality"
-      description="Shop the new Spring 2022 collection today"
+      description="Shop the new Spring 2023 collection today"
       link="#"
       color-link="light"
     />

@@ -44,6 +44,27 @@
           />
         </div>
       </div>
+
+      <div class="footer-copyright">
+        <span class="footer-copyright__name">Copyright 2023 Avion LTD</span>
+        <div class="footer-copyright__social">
+          <NuxtLink to="#">
+            <img src="../public/svg/social/lnk.svg" />
+          </NuxtLink>
+          <NuxtLink to="#">
+            <img src="../public/svg/social/facebook.svg" />
+          </NuxtLink>
+          <NuxtLink to="#">
+            <img src="../public/svg/social/inst.svg" />
+          </NuxtLink>
+          <NuxtLink to="#">
+            <img src="../public/svg/social/skype.svg" />
+          </NuxtLink>
+          <NuxtLink to="#">
+            <img src="../public/svg/social/pint.svg" />
+          </NuxtLink>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -79,6 +100,20 @@
       }
       &:hover {
         text-decoration: underline;
+      }
+    }
+  }
+  &-copyright {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+    &__name {
+      font-size: 14px;
+    }
+    &__social {
+      display: flex;
+      & > *:not(:last-child) {
+        margin-right: 24px;
       }
     }
   }
