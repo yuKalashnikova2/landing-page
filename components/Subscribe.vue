@@ -32,10 +32,17 @@
   padding: 97px 0 86px 0;
   background-size: cover;
   color: #fff;
+  @media screen and (max-width: 767px) {
+    background: url('/img/subscribe-mobile.jpg');
+    padding: 24px;
+  }
   &-content {
     max-width: 500px;
     margin: auto;
     text-align: center;
+    @media screen and (max-width: 767px) {
+        text-align: left; 
+    }
   }
 
   &-title {
@@ -43,6 +50,14 @@
     font-size: 32px;
     font-weight: 400;
     margin: 0 0 12px 0;
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+    }
+  }
+  &-description {
+    @media screen and (max-width: 767px) {
+        // font-size: 16px;
+    }
   }
   &-benefits {
     display: flex;
@@ -51,16 +66,24 @@
     & > *:not(:last-child) {
       margin-right: 36px;
     }
+    @media screen and (max-width: 767px) {
+        display: block;
+        margin-top: 24px;
+    }
     &__item {
       display: flex;
       align-items: center;
       gap: 8px;
+      padding-bottom: 8px;
     }
   }
   &-form {
     display: flex;
     margin-top: 40px;
     width: 100%;
+    @media screen and (max-width: 767px) {
+            margin-top: 15px;
+        }
   }
 }
 </style>

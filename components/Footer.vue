@@ -49,19 +49,19 @@
         <span class="footer-copyright__name">Copyright 2023 Avion LTD</span>
         <div class="footer-copyright__social">
           <NuxtLink to="#">
-            <img src="../public/svg/social/lnk.svg" />
+            <img src="/svg/social/lnk.svg" />
           </NuxtLink>
           <NuxtLink to="#">
-            <img src="../public/svg/social/facebook.svg" />
+            <img src="/svg/social/facebook.svg" />
           </NuxtLink>
           <NuxtLink to="#">
-            <img src="../public/svg/social/inst.svg" />
+            <img src="/svg/social/inst.svg" />
           </NuxtLink>
           <NuxtLink to="#">
-            <img src="../public/svg/social/skype.svg" />
+            <img src="/svg/social/skype.svg" />
           </NuxtLink>
           <NuxtLink to="#">
-            <img src="../public/svg/social/pint.svg" />
+            <img src="/svg/social/pint.svg" />
           </NuxtLink>
         </div>
       </div>
@@ -69,23 +69,35 @@
   </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .footer {
   background: var(--black);
   color: #fff;
   &-content {
     padding: 58px 82px 25px 82px;
+    @media screen and ( max-width: 1150px) {
+        padding: 58px 20px 25px 20px;
+    }
   }
   &-main {
     display: grid;
     grid-template-columns: 540px 1fr;
     column-gap: 110px;
     border-bottom: 1px solid var(--violet);
+    @media screen and ( max-width: 1150px) {
+        column-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and ( max-width: 767px) {
+        grid-template-columns: 1fr;
+        padding-bottom: 16px;
+    }
   }
   &-menu {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 48px;
+ 
     &__title {
       display: block;
       margin-bottom: 12px;
@@ -107,6 +119,10 @@
     display: flex;
     justify-content: space-between;
     padding-top: 24px;
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        align-items: center;
+    }
     &__name {
       font-size: 14px;
     }
@@ -114,6 +130,9 @@
       display: flex;
       & > *:not(:last-child) {
         margin-right: 24px;
+      }
+      @media screen and ( max-width: 767px) {
+        display: none;
       }
     }
   }

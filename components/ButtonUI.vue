@@ -12,6 +12,10 @@ const props = defineProps({
     type: String,
     default: 'light',
   },
+  mobileWidth: {
+    type: Boolean,
+    default: false,
+  },
 })
 </script>
 <template>
@@ -37,6 +41,7 @@ const props = defineProps({
         'btn-primary': colorBtn === 'primary',
         'btn-secondary': colorBtn === 'secondary',
         'btn-light': colorBtn === 'light',
+        'btn-fullWidth': mobileWidth
       },
     ]"
     ><slot></slot
@@ -54,6 +59,10 @@ const props = defineProps({
   font-size: 16px;
   cursor: pointer;
   border: none;
+  white-space: nowrap;
+  @media screen and (max-width: 767px) {
+    padding: 0 15px;
+  }
   &:hover {
     opacity: 0.8;
   }
@@ -68,6 +77,15 @@ const props = defineProps({
   &-light {
     background: #f9f9f9;
     color: var(--black);
+  }
+  &-light {
+    background: #f9f9f9;
+    color: var(--black);
+  }
+  &-fullWidth {
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 }
 </style>

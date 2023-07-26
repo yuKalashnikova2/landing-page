@@ -9,7 +9,7 @@
       color-btn="#fff"
       background="#2A254B"
     />
-    <img src="/img/room.jpg" />
+    <img src="/img/room.jpg" class="features-img" />
   </div>
 </template>
 
@@ -20,5 +20,14 @@
   column-gap: 16px;
   padding: 0 80px;
   margin: 60px 0;
+  @media screen and (max-width: 767px) {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+    padding: 0;
+  }
+  &-img {
+    object-fit: cover;
+    height: 100%;
+  }
 }
 </style>

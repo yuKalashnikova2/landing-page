@@ -8,6 +8,7 @@
       link="#"
       color-link="light"
     />
+    <img src="/img/hero-block.png" class="hero-image__mobile" />
   </div>
 </template>
 
@@ -20,5 +21,17 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 80px;
+  &-image__mobile {
+    display: none;
+  }
+  @media screen and (max-width: 767px) {
+    display: block;
+    height: auto;
+    background: transparent;
+    padding-right: 0px;
+    &-image__mobile {
+    display: block;
+  }
+  }
 }
 </style>

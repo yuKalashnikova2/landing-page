@@ -46,8 +46,9 @@ const props = defineProps({
  
 
     <div class="hero-info__link">
-      <ButtonUI type="link" :colorBtn="colorLink || 'secondary'" to="#">View collection</ButtonUI>
+      <ButtonUI type="link" :colorBtn="colorLink || 'secondary'" to="#" mobileWidth>View collection</ButtonUI>
     </div>
+
   </div>
 </template>
 
@@ -61,6 +62,13 @@ const props = defineProps({
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 767px) {
+      padding: 47px 24px 32px 24px;
+      min-height: 0px;
+  }
+  &__text {
+    margin-bottom: 32px;
+  }
 
     &__title {
       line-height: 1.5;

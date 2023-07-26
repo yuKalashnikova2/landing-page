@@ -18,7 +18,7 @@ const products = ref([
       />
     </div>
     <div class="products-link">
-      <ButtonUI type="link" colorBtn="light" to="#">View collection</ButtonUI>
+      <ButtonUI type="link" colorBtn="light" to="#" mobileWidth>View collection</ButtonUI>
     </div>
   </div>
 </template>
@@ -29,6 +29,13 @@ const products = ref([
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
   margin: 0 80px 0 80px;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+  @media screen and (max-width: 767px) {
+    margin: 0 24px 0 24px;
+  }
   &-link {
     display: flex;
     justify-content: center;
